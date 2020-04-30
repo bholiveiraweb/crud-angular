@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>
+        Excluir Produto
+    </mat-card-title>
+
+    Tem certeza que deseja excluir o produto <strong>#{{product.id}} - {{product.name}}</strong>?
+    <p>
+        <small class="warn"><strong>Atenção! A ação não poderá ser desfeita</strong></small>
+    </p>
+
+    <button mat-raised-button (click)="deleteProduct()" color="warn">
+        Confirmar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
